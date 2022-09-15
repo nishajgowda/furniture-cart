@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.furniturecart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/acce"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/acce"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FURNITURECART">
+        <activity
+            android:name=".table"
+            android:exported="false" />
+        <activity
+            android:name=".image"
+            android:exported="false"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".chair"
+            android:exported="false"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".acc"
+            android:exported="false" />
+        <activity
+            android:name=".menu"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

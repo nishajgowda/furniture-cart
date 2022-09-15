@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/background"
+    tools:context=".dashboard">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="164dp">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/transparent"
+            android:fadingEdgeLength="200dp"
+            app:fabAlignmentMode="end"
+
+            app:fabAnimationMode="scale"
+            app:fabCradleRoundedCornerRadius="20dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottonnavigation"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:backgroundTint="@color/transparent"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@color/teal_200"
+            app:layout_anchor="@+id/toolbar"
+            app:layout_anchorGravity="bottom"
+            app:menu="@menu/toolbar" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/appbar_scrolling_view_behavior"
+
+            android:src="@drawable/acce"
+            app:layout_anchor="@+id/toolbar" />
+
+        <FrameLayout
+            android:layout_width="404dp"
+            android:layout_height="800dp"
+            android:id="@+id/container">
+
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
